@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SubWeave — Privacy Policy &amp; Terms</title>
+<link rel="icon" type="image/png" href="icon.png">
+<meta name="description" content="How SubWeave handles your data, the permissions it uses, and its terms of use.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6F7FC; --surface: #FFFFFF; --surface-2: #ECEEF8;
+    --text: #15171F; --muted: #5A5F73; --outline: #DADDEE;
+    --primary: #4453C8; --primary-container: #E0E3FF; --on-primary-container: #141B52;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0B0C12; --surface: #14161E; --surface-2: #1B1E28;
+      --text: #E8EAF0; --muted: #A3A8B8; --outline: #272B38;
+      --primary: #A9B4FF; --primary-container: #262D63; --on-primary-container: #E0E3FF;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0B0C12; --surface: #14161E; --surface-2: #1B1E28;
+    --text: #E8EAF0; --muted: #A3A8B8; --outline: #272B38;
+    --primary: #A9B4FF; --primary-container: #262D63; --on-primary-container: #E0E3FF;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--primary); word-break: break-word; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 20px 0 8px; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; text-decoration: none; color: var(--text); }
+  .logo { width: 36px; height: 36px; border-radius: 10px; flex: none; display: block; }
+  h1 { font-size: clamp(26px, 5vw, 36px); line-height: 1.2; margin: 24px 0 4px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 20px; }
+  .summary { background: var(--surface-2); border-radius: 16px; padding: 16px 18px; margin-bottom: 8px; }
+  .summary p { margin: 0; }
+  nav.toc { margin: 16px 0 8px; font-size: 15px; }
+  nav.toc ol { margin: 0; padding-left: 20px; }
+  h2 { font-size: 22px; margin: 36px 0 8px; padding-top: 8px; border-top: 1px solid var(--outline); }
+  h3 { font-size: 17px; margin: 22px 0 6px; }
+  p, li { color: var(--text); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  .muted { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 4px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--outline); }
+  th { font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .4px; }
+  .table-wrap { overflow-x: auto; }
+  footer { border-top: 1px solid var(--outline); margin-top: 40px; padding: 24px 0 40px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="./">
+      <img class="logo" src="icon.png" alt="" width="36" height="36">
+      SubWeave
+    </a>
+  </header>
+
+  <main>
+    <h1>Privacy Policy &amp; Terms of Use</h1>
+    <p class="meta">Effective date: November 17, 2026</p>
+
+    <div class="summary">
+      <p><strong>In short:</strong> SubWeave translates subtitle files <strong>on your phone</strong>. Your subtitle
+      files, translations, edits and glossary are never uploaded. The app has no accounts. It uses Google services
+      for crash reports and usage statistics, and shows ads, as described below.</p>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <ol>
+        <li><a href="#processing">What stays on your device</a></li>
+        <li><a href="#collected">Data collected by third-party services</a></li>
+        <li><a href="#network">When the app uses the internet</a></li>
+        <li><a href="#permissions">Permissions</a></li>
+        <li><a href="#choices">Your choices and data deletion</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#terms">Terms of Use</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="processing">1. What stays on your device</h2>
+    <ul>
+      <li><strong>Translation runs on your device.</strong> SubWeave uses the Tencent HY-MT 1.5 translation model
+        (&ldquo;Best&rdquo; mode), which is downloaded once and then runs locally through llama.cpp, and Google ML Kit
+        on-device translation (&ldquo;Fast&rdquo; mode). Google ML Kit language identification also runs on the device,
+        to detect the language of a subtitle file.</li>
+      <li>The subtitle files you open, their translations, your edits and your glossary are processed and stored on
+        your device. They are <strong>not sent to us or to any third party</strong>. Files are opened and saved only
+        through the system file picker or Share that you choose.</li>
+      <li>Your settings, glossary and translation job history are stored only on your device. You can clear them in
+        the app or by clearing the app's data.</li>
+    </ul>
+
+    <h2 id="collected">2. Data collected by third-party services</h2>
+    <p>We don't operate our own analytics or ad servers and don't sell personal data. The following Google services
+      are built into the app. Their data is linked to app or device identifiers, never to your name or account.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Service</th><th>Data</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Firebase Crashlytics</td>
+            <td>Crash and error reports: stack traces, device model, Android version, app version, a Crashlytics
+              installation ID, and counts and identifiers such as the number of lines and the language pair. Never
+              subtitle text, translations, glossary terms or file names.</td>
+            <td>Find and fix crashes</td>
+          </tr>
+          <tr>
+            <td>Google Analytics for Firebase</td>
+            <td>App usage events (for example a file was opened, a translation started or finished with counts
+              grouped in ranges, the language pair, a file was saved or shared) and an app instance ID. Never text
+              or file names.</td>
+            <td>Understand which features and languages are used</td>
+          </tr>
+          <tr>
+            <td>Google AdMob <span class="muted">(only while ads are enabled)</span></td>
+            <td>Advertising ID, device information, IP address, ad interactions. Ads may be personalised only with
+              your consent.</td>
+            <td>Show ads that fund the app</td>
+          </tr>
+          <tr>
+            <td>Google User Messaging Platform <span class="muted">(only while ads are enabled)</span></td>
+            <td>Your consent choices, where a consent form is required (for example in the EEA and the UK).</td>
+            <td>Record ad and privacy choices</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">These services act under Google's terms and policies:
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a> ·
+      <a href="https://policies.google.com/technologies/partner-sites">How Google uses data from apps that use its services</a> ·
+      <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</p>
+    <p><strong>About ads:</strong> SubWeave is free and shows ads to fund its development: a banner and occasional
+      full-screen or rewarded ads. Ads can be turned off remotely, without an app update. While they are off, the
+      ads service isn't started and collects nothing.</p>
+
+    <h2 id="network">3. When the app uses the internet</h2>
+    <ul>
+      <li><strong>Translation model download:</strong> once, through Google Play's asset delivery or, if that isn't
+        available, from Hugging Face.</li>
+      <li><strong>ML Kit language packs:</strong> Google ML Kit downloads language packs from Google the first time
+        a language is used in Fast mode.</li>
+      <li><strong>App configuration:</strong> the app downloads a small settings file from a Cloudflare Workers
+        address. It sends nothing about you beyond the standard web request; like any web request, the server sees
+        your IP address, which we don't use or store.</li>
+      <li><strong>Google Play:</strong> in-app update and review prompts.</li>
+      <li>Crash reports, usage statistics and, while enabled, ads (section 2).</li>
+    </ul>
+    <p>Translation itself works offline once the model is installed.</p>
+
+    <h2 id="permissions">4. Permissions</h2>
+    <ul>
+      <li><strong>Internet and network state:</strong> for the downloads, ads and reporting in section 3.</li>
+      <li><strong>Notifications</strong> (asked during onboarding): shows the progress of a translation and a
+        &ldquo;translation finished&rdquo; notification.</li>
+      <li><strong>Foreground service (data sync) and wake lock:</strong> keep a translation running while the app is
+        in the background.</li>
+      <li><strong>Run at startup:</strong> used only to tell you that a translation was interrupted by a restart. It
+        does not start translating by itself.</li>
+      <li><strong>Advertising ID</strong> (AD_ID / Ad Services): used for ads while they are enabled.</li>
+    </ul>
+    <p>SubWeave does <strong>not</strong> request storage, camera, microphone, location or contacts permissions.
+      Files are opened and saved only through the system file picker or Share that you choose.</p>
+
+    <h2 id="choices">5. Your choices and data deletion</h2>
+    <ul>
+      <li><strong>Ads (while enabled):</strong> you can reset or delete your advertising ID, or opt out of personalised
+        ads, in Android Settings › Privacy › Ads (or Google › Ads). Where a consent form applies, you can change your
+        choice again in the app under Settings › About › Privacy options.</li>
+      <li><strong>Data on your device:</strong> delete job history, files and glossary entries in the app, or
+        uninstall the app to remove everything.</li>
+      <li><strong>Backup:</strong> the downloaded model, job history and app configuration are excluded from Android
+        backup. Your glossary and settings may be included in your Android backup.</li>
+      <li><strong>Data held by Google services:</strong> it isn't linked to your identity. To ask us to delete
+        analytics or crash data related to your device, email us (section 9) with the approximate date. We'll
+        handle it through the tools these services provide.</li>
+    </ul>
+
+    <h2 id="children">6. Children</h2>
+    <p>SubWeave is a general translation tool and isn't directed at children under 13. We don't knowingly collect
+      personal information from children. If you believe a child has provided personal information, contact us and
+      we'll take appropriate steps.</p>
+
+    <h2 id="terms">7. Terms of Use</h2>
+    <ul>
+      <li>Translations are produced by machine translation and can be wrong, incomplete or misleading. Check
+        anything important.</li>
+      <li>Don't use SubWeave or its translations to break the law, to harm others, or in any way that violates
+        applicable acceptable use policies. This includes, among others: violating laws or the rights of others,
+        generating or spreading harmful, deceptive or discriminatory content, harming minors, and using the output
+        to train or improve other machine learning or large language models.</li>
+      <li>Respect the rights of the subtitles you translate. Don't translate subtitle files you have no right to use.
+        Translating a file doesn't give you any rights to it.</li>
+      <li>Open-source components and the Tencent HY-MT 1.5 translation model are used under their own licenses, listed in
+        the app under Settings › About › Open-source licenses.</li>
+      <li>SubWeave is provided "as is", without warranty of any kind. To the extent permitted by law, we aren't
+        liable for any damages arising from its use.</li>
+    </ul>
+
+    <h2 id="changes">8. Changes</h2>
+    <p>We may update this policy when the app changes. The new version is posted on this page with a new effective
+      date. Significant changes are also announced in the app or on the store listing.</p>
+
+    <h2 id="contact">9. Contact</h2>
+    <p>Questions or requests about privacy or these terms:
+      <a href="mailto:vantuan8895@gmail.com">vantuan8895@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <a href="./">SubWeave</a> · <a href="../">All apps</a> · © 2026 SubWeave
+  </footer>
+</div>
+</body>
+</html>
