@@ -16,7 +16,7 @@
     --bg: #F5F8F7; --surface: #FFFFFF; --surface-2: #EBF1EE;
     --text: #141917; --muted: #56615C; --outline: #D9E1DD;
     --primary: #006C4C; --on-primary: #FFFFFF;
-    --primary-container: #A8F0CF; --sw-container: #E0E3FF; --on-primary-container: #002115;
+    --primary-container: #A8F0CF; --sw-container: #E0E3FF; --sl-container: #FFD9EF; --on-primary-container: #002115;
     --glow-1: rgba(0, 168, 120, .22); --glow-2: rgba(64, 132, 255, .16);
     --grid-line: rgba(20, 25, 23, .05);
     --shadow: 0 1px 2px rgba(0,0,0,.04), 0 12px 32px -12px rgba(0, 60, 40, .18);
@@ -26,7 +26,7 @@
       --bg: #0A0D10; --surface: #13181D; --surface-2: #1A2027;
       --text: #E8EAED; --muted: #A1AAB4; --outline: #262D36;
       --primary: #7EE0B5; --on-primary: #00261A;
-      --primary-container: #12392B; --sw-container: #262D63; --on-primary-container: #A8F0CF;
+      --primary-container: #12392B; --sw-container: #262D63; --sl-container: #5C1F4A; --on-primary-container: #A8F0CF;
       --glow-1: rgba(126, 224, 181, .14); --glow-2: rgba(96, 150, 255, .12);
       --grid-line: rgba(255, 255, 255, .04);
       --shadow: 0 1px 2px rgba(0,0,0,.3), 0 16px 40px -16px rgba(0,0,0,.6);
@@ -36,7 +36,7 @@
     --bg: #0A0D10; --surface: #13181D; --surface-2: #1A2027;
     --text: #E8EAED; --muted: #A1AAB4; --outline: #262D36;
     --primary: #7EE0B5; --on-primary: #00261A;
-    --primary-container: #12392B; --sw-container: #262D63; --on-primary-container: #A8F0CF;
+    --primary-container: #12392B; --sw-container: #262D63; --sl-container: #5C1F4A; --on-primary-container: #A8F0CF;
     --glow-1: rgba(126, 224, 181, .14); --glow-2: rgba(96, 150, 255, .12);
     --grid-line: rgba(255, 255, 255, .04);
     --shadow: 0 1px 2px rgba(0,0,0,.3), 0 16px 40px -16px rgba(0,0,0,.6);
@@ -216,10 +216,44 @@
     <section id="apps" aria-labelledby="apps-h">
       <div class="sec-head">
         <h2 id="apps-h">Apps</h2>
-        <span>2 apps</span>
+        <span>3 apps</span>
       </div>
 
       <article class="feature">
+        <div class="body">
+          <div class="top">
+            <img src="subleaf/icon.png" alt="SubLeaf icon" width="72" height="72">
+            <div>
+              <h3>SubLeaf</h3>
+              <div class="cat">Offline book translator</div>
+            </div>
+          </div>
+          <p>Translate EPUB and TXT books on your phone, offline, and read while it translates. Keep chapters, images and styling, fix any paragraph, and save a bilingual or translation-only book.</p>
+          <div class="chips">
+            <span class="chip">Works offline</span>
+            <span class="chip">38 languages</span>
+            <span class="chip">EPUB &amp; TXT</span>
+            <span class="chip">No account</span>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="subleaf/">
+              Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.app.subleaf">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 3.5v17a1 1 0 0 0 1.5.86l14.7-8.5a1 1 0 0 0 0-1.72L5.5 2.64A1 1 0 0 0 4 3.5z"/></svg>
+              Google Play
+            </a>
+          </div>
+        </div>
+        <a class="visual" href="subleaf/" aria-label="Open SubLeaf page" style="background: radial-gradient(circle at 30% 20%, rgba(168,50,127,.35), transparent 60%), radial-gradient(circle at 80% 90%, rgba(208,74,155,.35), transparent 60%), var(--sl-container);">
+          <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+          <span class="bubble b1"><small>FR</small>Il était une fois</span>
+          <img src="subleaf/icon.png" alt="" width="132" height="132">
+          <span class="bubble b2"><small>EN</small>Once upon a time</span>
+        </a>
+      </article>
+      <article class="feature" style="margin-top: 16px;">
         <div class="body">
           <div class="top">
             <img src="subweave/icon.png" alt="SubWeave icon" width="72" height="72">
@@ -300,7 +334,7 @@
         <div class="card">
           <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg></div>
           <h3>On your device</h3>
-          <p>Recognition and translation run locally. Your text, screen, photos and subtitle files aren't uploaded.</p>
+          <p>Recognition and translation run locally. Your text, screen, photos, subtitle files and books aren't uploaded.</p>
         </div>
         <div class="card">
           <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><path d="M3 3l18 18"/></svg></div>
@@ -329,6 +363,7 @@
 
   <footer>
     <span>© 2026 vantuan88291</span>
+    <a href="subleaf/policy.html">SubLeaf Privacy Policy</a>
     <a href="subweave/policy.html">SubWeave Privacy Policy</a>
     <a href="subglance/policy.html">SubGlance Privacy Policy</a>
   </footer>
